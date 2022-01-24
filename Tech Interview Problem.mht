@@ -1,0 +1,523 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://equalexperts.github.io/ee-tech-interviews-uk/shopping-cart-problem.html
+Subject: Equal Experts Tech Interview Problem
+Date: Mon, 24 Jan 2022 13:33:52 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--8CYBUcGdKtsEgXS0NISRsPJ2AqDxejpN9ROoVejM2X----"
+
+
+------MultipartBoundary--8CYBUcGdKtsEgXS0NISRsPJ2AqDxejpN9ROoVejM2X----
+Content-Type: text/html
+Content-ID: <frame-A77B096E1BA72E63C53EE9847251D319@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://equalexperts.github.io/ee-tech-interviews-uk/shopping-cart-problem.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-6dc399a9-53f4-48fd-bb36-b77832f031ce@mhtml.blink" />
+   =20
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"chrome=3D1">
+    <title>Equal Experts Tech Interview Problem</title>
+
+    <link rel=3D"stylesheet" href=3D"https://equalexperts.github.io/ee-tech=
+-interviews-uk/assets/css/style.css?v=3D5b8d0fd276b6d288905ed2f63a934e057e8=
+feca2">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <!--[if lt IE 9]>
+    <script src=3D"//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class=3D"wrapper">
+      <h1 id=3D"shopping-cart">Shopping Cart</h1>
+
+<p>Please make sure you read this document in its entirety.</p>
+
+<h2 id=3D"overview">Overview</h2>
+
+<p>Please write code delivering the requirements of the steps that follow. =
+The requirements don=E2=80=99t mention a command line, web or any other typ=
+e of application, and we are not looking for one. Do write code that you wo=
+uld be happy delivering to a paying client, keeping in mind the simplicity =
+comments below.</p>
+
+<p>You should not find this test to be particularly difficult. It is design=
+ed to be a straightforward coding exercise, and it should take you no more =
+than 90 minutes.</p>
+
+<h2 id=3D"the-problem">The problem</h2>
+
+<p>As you work through the steps, you=E2=80=99ll create code to allow a use=
+r to add products to a shopping cart,  calculate the total price and then t=
+he sales tax for the items contained in the cart. As mentioned previously, =
+we are not looking for a command line or a web application, so please just =
+use your tests to drive the code (e.g. class libraries).</p>
+
+<p><strong><em>Please Note</em></strong>: All totals should be rounded up t=
+o 2 decimal places, i.e. 0.565 should result in 0.57 but 0.5649 should resu=
+lt in 0.56.  This is baisically the same rounding you learned at school, bu=
+t you can <a href=3D"http://www.clivemaxfield.com/diycalculator/sp-round.sh=
+tml#A3">follow this link</a> if you really want more details.</p>
+
+<h3 id=3D"step-1-add-products-to-the-shopping-cart">Step 1: Add products to=
+ the shopping cart.</h3>
+
+<p>Given:</p>
+<ul>
+  <li>An empty shopping cart</li>
+  <li>And a product, <em>Dove Soap</em> with a unit price of <em>39.99</em>=
+</li>
+</ul>
+
+<p>When:</p>
+<ul>
+  <li>The user adds 5 <em>Dove Soaps</em> to the shopping cart</li>
+</ul>
+
+<p>Then:</p>
+<ul>
+  <li>The shopping cart should contain <em>5</em> Dove Soaps each with a un=
+it price of <em>39.99</em></li>
+  <li>And the shopping cart=E2=80=99s total price should equal <em>199.95</=
+em></li>
+</ul>
+
+<p>Archive this as a <em>separate</em> .zip file named <em>step1.zip</em> t=
+hen continue on to step two.</p>
+
+<h3 id=3D"step-2-add-additional-products-of-the-same-type-to-the-shopping-c=
+art">Step 2: Add additional products of the same type to the shopping cart.=
+</h3>
+
+<p>Given:</p>
+<ul>
+  <li>An empty shopping cart</li>
+  <li>And a product, <em>Dove Soap</em> with a unit price of <em>39.99</em>=
+</li>
+</ul>
+
+<p>When:</p>
+<ul>
+  <li>The user adds 5 <em>Dove Soaps</em> to the shopping cart</li>
+  <li>And then adds another 3 <em>Dove Soaps</em> to the shopping cart</li>
+</ul>
+
+<p>Then:</p>
+<ul>
+  <li>The shopping cart should contain 8 Dove Soaps each with a unit price =
+of <em>39.99</em></li>
+  <li>And the shopping cart=E2=80=99s total price should equal <em>319.92</=
+em></li>
+</ul>
+
+<p>Archive this as a <em>separate</em> .zip file named <em>step2.zip</em> t=
+hen continue on to step three.</p>
+
+<h3 id=3D"step-3-calculate-the-tax-rate-of-the-shopping-cart-with-multiple-=
+items">Step 3: Calculate the tax rate of the shopping cart with multiple it=
+ems</h3>
+
+<p>Given:</p>
+<ul>
+  <li>An empty shopping cart</li>
+  <li>And a product, <em>Dove Soap</em> with a unit price of <em>39.99</em>=
+</li>
+  <li>And another product, <em>Axe Deo</em> with a unit price of <em>99.99<=
+/em></li>
+  <li>And a sales tax rate of 12.5%</li>
+</ul>
+
+<p>When:</p>
+<ul>
+  <li>The user adds 2 <em>Dove Soaps</em> to the shopping cart</li>
+  <li>And then adds 2 <em>Axe Deos</em> to the shopping cart</li>
+</ul>
+
+<p>Then:</p>
+<ul>
+  <li>The shopping cart should contain 2 Dove Soaps each with a unit price =
+of <em>39.99</em></li>
+  <li>And the shopping cart should contain 2 Axe Deos each with a unit pric=
+e of <em>99.99</em></li>
+  <li>And the total sales tax amount for the shopping cart should equal <em=
+>35.00</em></li>
+  <li>And the shopping cart=E2=80=99s total price should equal <em>314.96</=
+em></li>
+</ul>
+
+<p>Archive this as a <em>separate</em> zip file named <em>step3.zip</em> fi=
+le and send all of the zip files as email attachments to your recruitment c=
+ontact, following the guidance set out below.</p>
+
+<p>Please include the version number <code class=3D"language-plaintext high=
+lighter-rouge">5b8d0fd276b6d288905ed2f63a934e057e8feca2</code> in a README =
+file with your submission so we know what version of the instructions you=
+=E2=80=99ve been given.</p>
+
+<p><strong>Note:</strong> Please <em>don=E2=80=99t</em> include the compile=
+d code in the zip files. We won=E2=80=99t use it, and it causes trouble wit=
+h many email systems.</p>
+
+<p>Please do not submit Dropbox or Google Drive links. They don=E2=80=99t m=
+eet the requirements of our anonymous submission policy.</p>
+
+<p><strong>Note for Gradle Users:</strong> Normal best practice would be to=
+ include the gradle wrapper in your build script. However, this causes the =
+project to include .jar and .bat files, which can cause trouble with a lot =
+of email systems. You don=E2=80=99t need to include a gradle wrapper with y=
+our project. The reviewer will have the latest version of gradle installed =
+on their system if gradle is used.</p>
+
+<h2 id=3D"anonymous-submission">Anonymous submission</h2>
+
+<p>We practice a blind review process for all submissions, so please don=E2=
+=80=99t include your name (or the name of your limited company) anywhere in=
+ your submitted source code, documentation, comments, or zip files. This ma=
+kes our interview process as fair and systematic as possible.</p>
+
+<p>The person who reviews your submission won=E2=80=99t have access to your=
+ CV or know anything about you, including your name.</p>
+
+<p>Obviously, do include your name in the email you send, so we know who su=
+bmitted the code! This won=E2=80=99t be shared with the reviewer.</p>
+
+<h2 id=3D"what-we-are-looking-for">What we are looking for:</h2>
+
+<p><strong>Test Coverage:</strong> The solution should be developed =E2=80=
+=9Ctest-first=E2=80=9D, and should have excellent unit tests and test cover=
+age.  It will be hard to pass this exercise if we can=E2=80=99t reasonably =
+believe the solution was developed =E2=80=9Ctest-first=E2=80=9D following T=
+DD.</p>
+
+<p><strong>Build file:</strong> Please provide an automated build file that=
+ compiles your code and runs the tests. For java submissions, a Gradle or M=
+aven build file is ideal. Submissions without an automated build will not b=
+e accepted.</p>
+
+<p><strong>Simplicity:</strong> We value simplicity as an architectural vir=
+tue and a development practice. Solutions should reflect the difficulty of =
+the assigned task, and should not be overly complex. Layers of abstraction,=
+ patterns, or architectural features that aren=E2=80=99t called for should =
+not be included.</p>
+
+<p><strong>Self-explanatory code:</strong> The solution you produce must sp=
+eak for itself. Multiple paragraphs explaining the solution are a sign that=
+ it isn=E2=80=99t straightforward enough to understand purely by reading co=
+de, and are not appropriate.</p>
+
+<h2 id=3D"deliverable">Deliverable</h2>
+
+<p><strong>Include a readme:</strong> Please include a readme file in the r=
+oot of the project which states any requirements to run the code, and comma=
+nds needed to run the code. Assume the reviewer is unfamiliar with your cho=
+ice of framework and/or build tools and maybe using a different IDE.</p>
+
+<p><strong>This version number:</strong> As mentioned above, please include=
+ the version number <code class=3D"language-plaintext highlighter-rouge">5b=
+8d0fd276b6d288905ed2f63a934e057e8feca2</code> in a README file with your su=
+bmission so we know what version of the instructions you=E2=80=99ve been gi=
+ven.</p>
+
+    </div>
+   =20
+ =20
+</body></html>
+------MultipartBoundary--8CYBUcGdKtsEgXS0NISRsPJ2AqDxejpN9ROoVejM2X----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-6dc399a9-53f4-48fd-bb36-b77832f031ce@mhtml.blink
+
+@charset "utf-8";
+
+@media print {
+  #ghostery-tracker-tally { display: none !important; }
+}
+------MultipartBoundary--8CYBUcGdKtsEgXS0NISRsPJ2AqDxejpN9ROoVejM2X----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://equalexperts.github.io/ee-tech-interviews-uk/assets/css/style.css?v=5b8d0fd276b6d288905ed2f63a934e057e8feca2
+
+@charset "utf-8";
+
+@font-face { font-family: "Noto Sans"; font-weight: 400; font-style: normal=
+; src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix") forma=
+t("embedded-opentype"), local("Noto Sans"), local("Noto-Sans-regular"), url=
+("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2") format("woff2"), url=
+("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff") format("woff"), url("=
+../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf") format("truetype"), url(=
+"../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans") format("svg");=
+ }
+
+@font-face { font-family: "Noto Sans"; font-weight: 700; font-style: normal=
+; src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix") format("embed=
+ded-opentype"), local("Noto Sans Bold"), local("Noto-Sans-700"), url("../fo=
+nts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"), url("../fonts/Noto=
+-Sans-700/Noto-Sans-700.woff") format("woff"), url("../fonts/Noto-Sans-700/=
+Noto-Sans-700.ttf") format("truetype"), url("../fonts/Noto-Sans-700/Noto-Sa=
+ns-700.svg#NotoSans") format("svg"); }
+
+@font-face { font-family: "Noto Sans"; font-weight: 400; font-style: italic=
+; src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix") format(=
+"embedded-opentype"), local("Noto Sans Italic"), local("Noto-Sans-italic"),=
+ url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2") format("woff2"), u=
+rl("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff") format("woff"), url("=
+../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf") format("truetype"), url(".=
+./fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans") format("svg"); }
+
+@font-face { font-family: "Noto Sans"; font-weight: 700; font-style: italic=
+; src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix") f=
+ormat("embedded-opentype"), local("Noto Sans Bold Italic"), local("Noto-San=
+s-700italic"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2"=
+) format("woff2"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.wo=
+ff") format("woff"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.=
+ttf") format("truetype"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700it=
+alic.svg#NotoSans") format("svg"); }
+
+.highlight table td { padding: 5px; }
+
+.highlight table pre { margin: 0px; }
+
+.highlight .cm { color: rgb(153, 153, 136); font-style: italic; }
+
+.highlight .cp { color: rgb(153, 153, 153); font-weight: bold; }
+
+.highlight .c1 { color: rgb(153, 153, 136); font-style: italic; }
+
+.highlight .cs { color: rgb(153, 153, 153); font-weight: bold; font-style: =
+italic; }
+
+.highlight .c, .highlight .cd { color: rgb(153, 153, 136); font-style: ital=
+ic; }
+
+.highlight .err { color: rgb(166, 23, 23); background-color: rgb(227, 210, =
+210); }
+
+.highlight .gd { color: rgb(0, 0, 0); background-color: rgb(255, 221, 221);=
+ }
+
+.highlight .ge { color: rgb(0, 0, 0); font-style: italic; }
+
+.highlight .gr { color: rgb(170, 0, 0); }
+
+.highlight .gh { color: rgb(153, 153, 153); }
+
+.highlight .gi { color: rgb(0, 0, 0); background-color: rgb(221, 255, 221);=
+ }
+
+.highlight .go { color: rgb(136, 136, 136); }
+
+.highlight .gp { color: rgb(85, 85, 85); }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: rgb(170, 170, 170); }
+
+.highlight .gt { color: rgb(170, 0, 0); }
+
+.highlight .kc { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kd { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kn { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kp { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kr { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .kt { color: rgb(68, 85, 136); font-weight: bold; }
+
+.highlight .k, .highlight .kv { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .mf { color: rgb(0, 153, 153); }
+
+.highlight .mh { color: rgb(0, 153, 153); }
+
+.highlight .il { color: rgb(0, 153, 153); }
+
+.highlight .mi { color: rgb(0, 153, 153); }
+
+.highlight .mo { color: rgb(0, 153, 153); }
+
+.highlight .m, .highlight .mb, .highlight .mx { color: rgb(0, 153, 153); }
+
+.highlight .sb { color: rgb(221, 17, 68); }
+
+.highlight .sc { color: rgb(221, 17, 68); }
+
+.highlight .sd { color: rgb(221, 17, 68); }
+
+.highlight .s2 { color: rgb(221, 17, 68); }
+
+.highlight .se { color: rgb(221, 17, 68); }
+
+.highlight .sh { color: rgb(221, 17, 68); }
+
+.highlight .si { color: rgb(221, 17, 68); }
+
+.highlight .sx { color: rgb(221, 17, 68); }
+
+.highlight .sr { color: rgb(0, 153, 38); }
+
+.highlight .s1 { color: rgb(221, 17, 68); }
+
+.highlight .ss { color: rgb(153, 0, 115); }
+
+.highlight .s { color: rgb(221, 17, 68); }
+
+.highlight .na { color: rgb(0, 128, 128); }
+
+.highlight .bp { color: rgb(153, 153, 153); }
+
+.highlight .nb { color: rgb(0, 134, 179); }
+
+.highlight .nc { color: rgb(68, 85, 136); font-weight: bold; }
+
+.highlight .no { color: rgb(0, 128, 128); }
+
+.highlight .nd { color: rgb(60, 93, 93); font-weight: bold; }
+
+.highlight .ni { color: rgb(128, 0, 128); }
+
+.highlight .ne { color: rgb(153, 0, 0); font-weight: bold; }
+
+.highlight .nf { color: rgb(153, 0, 0); font-weight: bold; }
+
+.highlight .nl { color: rgb(153, 0, 0); font-weight: bold; }
+
+.highlight .nn { color: rgb(85, 85, 85); }
+
+.highlight .nt { color: rgb(0, 0, 128); }
+
+.highlight .vc { color: rgb(0, 128, 128); }
+
+.highlight .vg { color: rgb(0, 128, 128); }
+
+.highlight .vi { color: rgb(0, 128, 128); }
+
+.highlight .nv { color: rgb(0, 128, 128); }
+
+.highlight .ow { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .o { color: rgb(0, 0, 0); font-weight: bold; }
+
+.highlight .w { color: rgb(187, 187, 187); }
+
+.highlight { background-color: rgb(248, 248, 248); }
+
+body { background-color: rgb(255, 255, 255); padding: 50px; font: 400 14px =
+/ 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: r=
+gb(114, 114, 114); }
+
+h1, h2, h3, h4, h5, h6 { color: rgb(34, 34, 34); margin: 0px 0px 20px; }
+
+p, ul, ol, table, pre, dl { margin: 0px 0px 20px; }
+
+h1, h2, h3 { line-height: 1.1; }
+
+h1 { font-size: 28px; }
+
+h2 { color: rgb(57, 57, 57); }
+
+h3, h4, h5, h6 { color: rgb(73, 73, 73); }
+
+a { color: rgb(38, 124, 185); text-decoration: none; }
+
+a:hover, a:focus { color: rgb(0, 102, 153); font-weight: bold; }
+
+a small { font-size: 11px; color: rgb(119, 119, 119); margin-top: -0.3em; d=
+isplay: block; }
+
+a:hover small { color: rgb(119, 119, 119); }
+
+.wrapper { width: 860px; margin: 0px auto; }
+
+blockquote { border-left: 1px solid rgb(229, 229, 229); margin: 0px; paddin=
+g: 0px 0px 0px 20px; font-style: italic; }
+
+code, pre { font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Consol=
+e", Terminal, Consolas, "Liberation Mono", "DejaVu Sans Mono", "Courier New=
+", monospace; color: rgb(51, 51, 51); }
+
+pre { padding: 8px 15px; background: rgb(248, 248, 248); border-radius: 5px=
+; border: 1px solid rgb(229, 229, 229); overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid rgb(=
+229, 229, 229); }
+
+dt { color: rgb(68, 68, 68); font-weight: 700; }
+
+th { color: rgb(68, 68, 68); }
+
+img { max-width: 100%; }
+
+header { width: 270px; float: left; position: fixed; -webkit-font-smoothing=
+: subpixel-antialiased; }
+
+header ul { list-style: none; height: 40px; padding: 0px; background: rgb(2=
+44, 244, 244); border-radius: 5px; border: 1px solid rgb(224, 224, 224); wi=
+dth: 270px; }
+
+header li { width: 89px; float: left; border-right: 1px solid rgb(224, 224,=
+ 224); height: 40px; }
+
+header li:first-child a { border-radius: 5px 0px 0px 5px; }
+
+header li:last-child a { border-radius: 0px 5px 5px 0px; }
+
+header ul a { line-height: 1; font-size: 11px; color: rgb(103, 103, 103); d=
+isplay: block; text-align: center; padding-top: 6px; height: 34px; }
+
+header ul a:hover, header ul a:focus { color: rgb(103, 92, 92); font-weight=
+: bold; }
+
+header ul a:active { background-color: rgb(240, 240, 240); }
+
+strong { color: rgb(34, 34, 34); font-weight: 700; }
+
+header ul li + li + li { border-right: none; width: 89px; }
+
+header ul a strong { font-size: 14px; display: block; color: rgb(34, 34, 34=
+); }
+
+section { width: 500px; float: right; padding-bottom: 50px; }
+
+small { font-size: 11px; }
+
+hr { border: 0px; background: rgb(229, 229, 229); height: 1px; margin: 0px =
+0px 20px; }
+
+footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-=
+font-smoothing: subpixel-antialiased; }
+
+@media print, screen and (max-width: 960px) {
+  div.wrapper { width: auto; margin: 0px; }
+  header, section, footer { float: none; position: static; width: auto; }
+  header { padding-right: 320px; }
+  section { border-style: solid; border-color: rgb(229, 229, 229); border-i=
+mage: initial; border-width: 1px 0px; padding: 20px 0px; margin: 0px 0px 20=
+px; }
+  header a small { display: inline; }
+  header ul { position: absolute; right: 50px; top: 52px; }
+}
+
+@media print, screen and (max-width: 720px) {
+  body { overflow-wrap: break-word; }
+  header { padding: 0px; }
+  header ul, header p.view { position: static; }
+  pre, code { overflow-wrap: normal; }
+}
+
+@media print, screen and (max-width: 480px) {
+  body { padding: 15px; }
+  header ul { width: 99%; }
+  header li, header ul li + li + li { width: 33%; }
+}
+
+@media print {
+  body { padding: 0.4in; font-size: 12pt; color: rgb(68, 68, 68); }
+}
+------MultipartBoundary--8CYBUcGdKtsEgXS0NISRsPJ2AqDxejpN9ROoVejM2X------
